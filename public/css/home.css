@@ -44,7 +44,6 @@ body {
     background-image: url("/images/HomePageBanner.jpg");
     background-size: cover;
     background-position: center center;
-    opacity: 0.86;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,12 +61,12 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90%;
+    width: 91%;
     max-width: 1900px;
-    height: 70%;
+    height: 73%;
     max-height: 500px;
     padding: 50px 20px 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.85);
 }
