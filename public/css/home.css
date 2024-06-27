@@ -10,45 +10,219 @@ body {
     text-align: center;
 }
 
-.navbar-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    max-width: 150px;
-}
-
-.logo img {
-    padding-left: 50px;
+.navbar-brand img {
+    padding-left: 0px;
     height: 80px; 
 }
 
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
+.navbar-nav {
     margin-left: auto;
     margin-right: auto;
 }
 
-.nav-links li {
-    display: inline-block;
+.nav-item {
     margin-right: 20px;
 }
 
-.nav-links li:last-child {
+.nav-item:last-child {
     margin-right: 0;
 }
 
-.nav-links a {
+.nav-link {
     color: #000;
     text-decoration: none;
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
     text-decoration: underline;
+}
+
+.banner {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 60%;
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+}
+
+.banner-text p {
+    font-size: 1.25rem;
+}
+
+.split-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: calc(100% - 116px); /* 58px gap on each side */
+    margin: 0 58px; /* Margin on left and right */
+}
+
+.split-text-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.about-us-text-box {
+    background-color: #fab03b;
+    color: #f3f3f3;
+    font-size: 2.063rem;
+    margin-bottom: 20px;
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.about-us-text-box h2 {
+    font-size: 2.813rem;
+    text-decoration: underline;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.about-us-text-box p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.learn-more {
+    margin-top: 20px;
+    padding: 12px 50px;
+    font-size: 2.125rem;
+    color: #fff;
+    background-color: #fab03b;
+    border: 1px solid #0a0a0a;
+    border-radius: 21px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.learn-more:hover {
+    background-color: #364D66;
+}
+
+.what-we-offer-text-box {
+    background-color: #D2DAE2;
+    color: #364D66;
+    font-size: 1.375rem;
+    margin-bottom: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.what-we-offer-text-box h2 {
+    font-size: 2.813rem;
+    text-decoration: underline;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.what-we-offer-text-box p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.upcoming-events-text-box {
+    background-color: #364D66;
+    color: #f3f3f3;
+    font-size: 2.063rem;
+    margin-bottom: 20px;
+    position: relative;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.upcoming-events-text-box h2 {
+    font-size: 2.813rem;
+    color: #D98C18;
+    position: relative;
+}
+
+.upcoming-events-text-box h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background-color: #D98C18;
+}
+
+.split-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.split-image img {
+    width: 100%;
+    height: auto;
+}
+
+.top-half img {
+    object-position: top;
+    object-fit: cover;
+    height: 200px; /* Adjust height as needed */
+    margin-bottom: 20px;
+}
+
+.bottom-half img {
+    object-position: bottom;
+    object-fit: cover;
+    height: 200px; /* Adjust height as needed */
+}
+
+.footer {
+    background-color: #0A1326;
+    color: #f3f3f3;
+    padding: 20px 0;
+    text-align: center;
 }
