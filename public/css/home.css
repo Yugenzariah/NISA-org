@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* navigation bar styling */
 .navbar {
     background-color: #D2DAE2;
     color: #fff;
@@ -31,9 +32,8 @@ body {
 }
 
 .nav-item-contact {
-    margin-left:300px;
+    margin-left: 300px;
 }
-
 
 .nav-item:last-child {
     margin-right: 0;
@@ -44,18 +44,18 @@ body {
     text-decoration: none;
     font-size: 3rem;
     position: relative;
-    
+    transition: color 0.5s ease;
 }
 
 .nav-link::after {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: 16px; /* Adjust based on your text */
+    bottom: 16px;
     width: 0;
-    height: 1px; /* Thickness of the underline */
-    background-color: #364D66; /* Color of the underline */
-    transition: width 0.5s ease, left 0.5s ease; /* Smooth transition */
+    height: 1px;
+    background-color: #364D66;
+    transition: width 0.5s ease, left 0.5s ease;
 }
 
 .nav-link:hover::after {
@@ -64,8 +64,11 @@ body {
 }
 
 .nav-link:hover {
-    color:#364D66;
+    color: #364D66;
 }
+
+
+/*Banner styling*/
 
 .banner {
     margin-top: 150px;
@@ -504,15 +507,15 @@ body {
 .bottom-half img {
     object-position: bottom;
     object-fit: cover;
-    height: 200px; /* Adjust height as needed */
+    height: 200px;
     margin-bottom: 20px;
 }
 
 .footer-image {
     width: 100%;
     text-align: center;
-    margin: 10px 0; /* Adjust margin as needed */
-    max-height: 400px; /* Set the maximum height */
+    margin: 10px 0;
+    max-height: 400px;
     overflow: hidden;
     position: relative;
 }
