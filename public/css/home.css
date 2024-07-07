@@ -36,14 +36,6 @@ body::-webkit-scrollbar {
     margin-right: 120px;
 }
 
-.nav-item-contact {
-    margin-left: 300px;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
-
 .nav-link {
     color: #000;
     text-decoration: none;
@@ -604,9 +596,6 @@ body::-webkit-scrollbar {
     .nav-item {
         margin-right: 80px;
     }
-    .nav-item-contact {
-        margin-left: 150px;
-    }
     .banner {
         height: 500px;
     }
@@ -671,9 +660,6 @@ body::-webkit-scrollbar {
     }
     .nav-item {
         margin-right: 0;
-    }
-    .nav-item-contact {
-        margin-left: 0;
     }
     .navbar-nav {
         text-align: center;
@@ -749,9 +735,6 @@ body::-webkit-scrollbar {
     }
     .nav-item {
         margin-right: 0;
-    }
-    .nav-item-contact {
-        margin-left: 0;
     }
     .navbar-nav {
         text-align: center;
