@@ -3,6 +3,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Hides the scrollbar and keep functionality */
+body::-webkit-scrollbar {
+    display: none;
+}
+
 /* navigation bar styling */
 .navbar {
     background-color: #D2DAE2;
