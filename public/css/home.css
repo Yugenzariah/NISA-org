@@ -587,8 +587,9 @@ body::-webkit-scrollbar {
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
     .navbar-brand img {
-        height: 100px;
-        width: 100px;
+        height: 102px;
+        width: 106px;
+        margin-left: 0;
     }
     .nav-link {
         font-size: 2rem;
@@ -652,8 +653,9 @@ body::-webkit-scrollbar {
 
 @media (max-width: 768px) {
     .navbar-brand img {
-        height: 60px;
-        width: 60px;
+        height: 57;
+        width: 58;
+        margin-left: 0;
     }
     .nav-link {
         font-size: 1.2rem;
@@ -725,8 +727,8 @@ body::-webkit-scrollbar {
 
 @media (max-width: 480px) {
     .navbar-brand img {
-        height: 60px;
-        width: 60px;
+        height: 29;
+        width: 31;
     }
     .nav-link {
         font-size: 1.2rem;
