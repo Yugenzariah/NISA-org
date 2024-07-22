@@ -21,6 +21,27 @@ body::-webkit-scrollbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-toggler {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
 .navbar-brand img {
     height: 80px;
     width: 80px;
@@ -655,6 +676,9 @@ body::-webkit-scrollbar {
         height: 57;
         width: 58;
         margin-left: 0;
+    }
+    .navbar-collapse {
+        width: 100%;
     }
     .nav-link {
         font-size: 1.2rem;
