@@ -21,10 +21,15 @@ body::-webkit-scrollbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+.navbar-brand {
+    margin-right: auto;
+}
+
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 .navbar-brand-container {
@@ -34,11 +39,11 @@ body::-webkit-scrollbar {
 }
 
 .navbar-toggler {
-    position: relative;
-    z-index: 1;
+    margin-left: auto;
 }
 
 .navbar-collapse {
+    flex-grow: 0;
     justify-content: center;
 }
 
@@ -49,8 +54,8 @@ body::-webkit-scrollbar {
 }
 
 .navbar-nav {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    text-align: center;
 }
 
 .nav-item {
@@ -437,7 +442,7 @@ body::-webkit-scrollbar {
 }
 
 .event-image img {
-    width: 230px; 
+    width: 230px;
     height: 150px;
 }
 
@@ -611,138 +616,198 @@ body::-webkit-scrollbar {
         width: 106px;
         margin-left: 0;
     }
+
     .nav-link {
         font-size: 2rem;
     }
+
     .nav-item {
         margin-right: 80px;
     }
+
     .banner {
         height: 500px;
     }
+
     .banner-text h1 {
         font-size: 4rem;
     }
+
     .banner-text h2 {
         font-size: 2rem;
     }
+
     .banner-text p {
         font-size: 1.5rem;
     }
-    .about-us-text-box, .what-we-offer-text-box {
+
+    .about-us-text-box,
+    .what-we-offer-text-box {
         padding: 60px;
     }
-    .about-us-text-box h2, .what-we-offer-text-box h2 {
+
+    .about-us-text-box h2,
+    .what-we-offer-text-box h2 {
         font-size: 2.5rem;
     }
-    .about-us-text-box p, .what-we-offer-text-box p {
+
+    .about-us-text-box p,
+    .what-we-offer-text-box p {
         font-size: 1.5rem;
     }
+
     .learn-more {
         padding: 10px 40px;
         font-size: 1.5rem;
     }
+
     .offer-box h3 {
         font-size: 1.5rem;
     }
+
     .offer-box p {
         font-size: 1rem;
     }
+
     .upcoming-events-text-box h2 {
         font-size: 2.5rem;
     }
+
     .events-container {
         max-height: 400px;
     }
+
     .event-box {
         padding: 10px;
     }
+
     .event-details h3 {
         font-size: 1.5rem;
     }
+
     .event-details h4 {
         font-size: 1.25rem;
     }
+
     .event-details p {
         font-size: 1rem;
     }
+
     .event-time .time {
         font-size: 1.25rem;
     }
 }
 
 @media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: row;
+    }
+
+    .navbar-brand {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .navbar-toggler {
+        order: 1;
+    }
+
     .navbar-brand img {
         height: 57;
         width: 58;
         margin-left: 0;
     }
+
     .navbar-collapse {
         width: 100%;
+        text-align: center;
     }
+
     .nav-link {
         font-size: 1.2rem;
     }
+
     .nav-item {
         margin-right: 0;
     }
+
     .navbar-nav {
+        margin: 0;
         text-align: center;
-        width: 100%;
     }
+
     .navbar-toggler {
-        border: none;
-        outline: none;
+        margin-left: auto;
     }
+
     .banner {
         height: 400px;
     }
+
     .banner-text h1 {
         font-size: 3rem;
     }
+
     .banner-text h2 {
         font-size: 1.75rem;
     }
+
     .banner-text p {
         font-size: 1.25rem;
     }
-    .about-us-text-box, .what-we-offer-text-box {
+
+    .about-us-text-box,
+    .what-we-offer-text-box {
         padding: 40px;
     }
-    .about-us-text-box h2, .what-we-offer-text-box h2 {
+
+    .about-us-text-box h2,
+    .what-we-offer-text-box h2 {
         font-size: 2rem;
     }
-    .about-us-text-box p, .what-we-offer-text-box p {
+
+    .about-us-text-box p,
+    .what-we-offer-text-box p {
         font-size: 1.25rem;
     }
+
     .learn-more {
         padding: 8px 30px;
         font-size: 1.25rem;
     }
+
     .offer-box h3 {
         font-size: 1.25rem;
     }
+
     .offer-box p {
         font-size: 0.875rem;
     }
+
     .upcoming-events-text-box h2 {
         font-size: 2rem;
     }
+
     .events-container {
         max-height: 300px;
     }
+
     .event-box {
         padding: 8px;
     }
+
     .event-details h3 {
         font-size: 1.25rem;
     }
+
     .event-details h4 {
         font-size: 1rem;
     }
+
     .event-details p {
         font-size: 0.875rem;
     }
+
     .event-time .time {
         font-size: 1rem;
     }
@@ -753,81 +818,109 @@ body::-webkit-scrollbar {
         height: 29;
         width: 31;
     }
+
     .nav-link {
         font-size: 1.2rem;
         display: block;
         padding: 10px 0;
     }
+
     .nav-item {
         margin-right: 0;
     }
+
     .navbar-nav {
+        margin: 0;
         text-align: center;
-        width: 100%;
     }
+
     .navbar-toggler {
-        border: none;
-        outline: none;
+        margin-left: auto;
     }
+
     .banner {
         height: 300px;
     }
+
     .banner-text h1 {
         font-size: 2rem;
     }
+
     .banner-text h2 {
         font-size: 1.5rem;
     }
+
     .banner-text p {
         font-size: 1rem;
     }
-    .about-us-text-box, .what-we-offer-text-box {
+
+    .about-us-text-box,
+    .what-we-offer-text-box {
         padding: 20px;
     }
-    .about-us-text-box h2, .what-we-offer-text-box h2 {
+
+    .about-us-text-box h2,
+    .what-we-offer-text-box h2 {
         font-size: 1.75rem;
     }
-    .about-us-text-box p, .what-we-offer-text-box p {
+
+    .about-us-text-box p,
+    .what-we-offer-text-box p {
         font-size: 1rem;
     }
+
     .learn-more {
         padding: 6px 20px;
         font-size: 1rem;
     }
+
     .offer-box h3 {
         font-size: 1rem;
     }
+
     .offer-box p {
         font-size: 0.75rem;
     }
+
     .upcoming-events-text-box h2 {
         font-size: 1.75rem;
     }
+
     .events-container {
         max-height: 200px;
     }
+
     .event-box {
         padding: 6px;
     }
+
     .event-details h3 {
         font-size: 1rem;
     }
+
     .event-details h4 {
         font-size: 0.875rem;
     }
+
     .event-details p {
         font-size: 0.75rem;
     }
+
     .event-time .time {
         font-size: 0.875rem;
     }
-    .footer .text-left, .footer .social-links {
+
+    .footer .text-left,
+    .footer .social-links {
         text-align: center;
     }
+
     .footer .social-links {
         justify-content: center;
     }
+
     .footer .social-icon {
-        margin-left: 10px; /* Adjust spacing between icons */
+        margin-left: 10px;
+        /* Adjust spacing between icons */
     }
 }
