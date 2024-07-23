@@ -21,33 +21,51 @@ body::-webkit-scrollbar {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+    justify-content: center;
+}
+
 .navbar-brand img {
-    margin-left: -600px;
-    height: 120px;
-    width: 120px; 
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
 }
 
 .navbar-nav {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
+    text-align: center;
 }
 
 .nav-item {
     margin-right: 120px;
 }
 
-.nav-item-contact {
-    margin-left: 300px;
-}
-
-.nav-item:last-child {
-    margin-right: 0;
-}
-
 .nav-link {
     color: #000;
     text-decoration: none;
-    font-size: 3rem;
+    font-size: 2rem;
     position: relative;
     transition: color 0.5s ease;
 }
@@ -74,7 +92,6 @@ body::-webkit-scrollbar {
 
 
 /*Banner styling*/
-
 .banner {
     margin-top: 150px;
     width: 100%;
@@ -127,8 +144,8 @@ body::-webkit-scrollbar {
     flex-direction: column;
     align-items: center;
     position: relative;
-    width: calc(100% - 116px); /* 58px gap on each side */
-    margin: 0 58px; /* Margin on left and right */
+    width: calc(100% - 116px);
+    margin: 0 58px;
 }
 
 .split-text-box {
@@ -156,7 +173,7 @@ body::-webkit-scrollbar {
     font-size: 2.813rem;
     text-align: left;
     color: #ffffff;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
     position: relative;
     align-self: flex-start;
 }
@@ -174,7 +191,7 @@ body::-webkit-scrollbar {
 .about-us-text-box p {
     text-align: left;
     width: 100%;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
 }
 
 .learn-more {
@@ -201,7 +218,7 @@ body::-webkit-scrollbar {
     color: #364D66;
     font-size: 1.375rem;
     margin-bottom: 20px;
-    height: 600px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,7 +230,7 @@ body::-webkit-scrollbar {
     font-size: 2.813rem;
     text-align: left;
     color: #364D66;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
     position: relative;
     align-self: flex-start;
 }
@@ -231,7 +248,8 @@ body::-webkit-scrollbar {
 .what-we-offer-text-box p {
     text-align: left;
     width: 100%;
-    margin-bottom: 20px; /* Adjust margin as needed */
+    margin-bottom: 20px;
+    font-size: 1rem;
 }
 
 .offer-box-container {
@@ -267,13 +285,13 @@ body::-webkit-scrollbar {
     width: 70px;
     height: 70px;
     border-radius: 70%;
-    background-color: #5E82AA; /* Background color of the circle */
+    background-color: #5E82AA;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     border: 1px solid #0a0a0a;
-    top: -10px; /* Adjust to position the circle */
+    top: -10px;
 }
 
 .icon-container img {
@@ -287,14 +305,14 @@ body::-webkit-scrollbar {
     font-size: 2.063rem;
     margin-bottom: 10px;
     position: relative;
-    height: auto; /* Allow height to adjust based on content */
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px 20px; /* Adjust padding as needed */
-    width: 100%; /* Ensure it takes the full width of its container */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    padding: 30px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .upcoming-events-text-box h2 {
@@ -309,21 +327,21 @@ body::-webkit-scrollbar {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -5px; /* Adjust the padding here */
+    bottom: -5px;
     transform: translateX(-50%);
     width: 100%;
-    height: 1px; /* Thickness of the underline */
-    background-color: #D98C18; /* Color of the underline */
+    height: 1px;
+    background-color: #D98C18;
 }
 
 .events-container {
     display: flex;
-    flex-direction: column; /* Stack the event boxes vertically */
-    justify-content: flex-start; /* Align content to the start */
+    flex-direction: column;
+    justify-content: flex-start;
     width: 100%;
-    max-height: 600px; /* Set a maximum height */
-    overflow: hidden; /* Hide overflow content */
-    transition: max-height 0.5s ease; /* Smooth transition for expanding/collapsing */
+    max-height: 600px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
 }
 
 .events-container::after {
@@ -332,7 +350,7 @@ body::-webkit-scrollbar {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 300px; /* Adjust as needed */
+    height: 300px;
     z-index: 0;
 }
 
@@ -340,20 +358,20 @@ body::-webkit-scrollbar {
     background-color: #364D66;
     color: #000;
     display: flex;
-    flex-direction: row; /* Arrange items in a row */
+    flex-direction: row;
     align-items: center;
-    margin: 10px 0; /* Add vertical margin */
+    margin: 10px 0;
     padding: 20px;
     text-align: left;
     border: 1px solid #EAEAEA;
-    min-height: 200px; /* Ensure the event-box has a minimum height */
+    min-height: 200px;
     transition: background-color 0.5s ease, color 0.5s ease;
     position: relative;
     overflow: hidden;
 }
 
 .event-box:hover {
-    background-color: #D9D9D9; /* New background color on hover */
+    background-color: #D9D9D9;
     color: #000;
 }
 
@@ -361,7 +379,7 @@ body::-webkit-scrollbar {
 .event-box:hover .event-details p,
 .event-box:hover .event-time .time,
 .event-box:hover .event-time {
-    color: #000; /* New text color on hover */
+    color: #000;
 }
 
 .event-box::before {
@@ -371,7 +389,7 @@ body::-webkit-scrollbar {
     left: 50%;
     width: 300%;
     height: 300%;
-    background: #5e6f8a; /* New background color on hover */
+    background: #5e6f8a;
     z-index: -1;
     transition: width 0.5s ease, height 0.5s ease, top 0.5s ease, left 0.5s ease;
     transform: translate(-50%, -50%);
@@ -387,7 +405,7 @@ body::-webkit-scrollbar {
 .event-details,
 .event-time {
     position: relative;
-    z-index: 1; /* Ensure text is above the pseudo-element */
+    z-index: 1;
 }
 
 .event-details h3 {
@@ -399,11 +417,11 @@ body::-webkit-scrollbar {
     content: "";
     position: absolute;
     left: 50%;
-    bottom: -2px; /* Adjust based on your text */
+    bottom: -2px;
     width: 0;
-    height: 1px; /* Thickness of the underline */
-    background-color: #000000; /* Color of the underline */
-    transition: width 0.5s ease, left 0.5s ease; /* Smooth transition */
+    height: 1px;
+    background-color: #000000;
+    transition: width 0.5s ease, left 0.5s ease;
 }
 
 .event-box:hover .event-details h3::after {
@@ -415,7 +433,7 @@ body::-webkit-scrollbar {
 .event-details p,
 .event-time .time,
 .event-time {
-    transition: color 0.5s ease; /* Smooth transition for text color */
+    transition: color 0.5s ease;
 }
 
 .event-image {
@@ -425,7 +443,7 @@ body::-webkit-scrollbar {
 }
 
 .event-image img {
-    width: 230px; 
+    width: 230px;
     height: 150px;
 }
 
@@ -504,7 +522,7 @@ body::-webkit-scrollbar {
 .top-half img {
     object-position: top;
     object-fit: cover;
-    height: 200px; /* Adjust height as needed */
+    height: 200px;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -572,166 +590,225 @@ body::-webkit-scrollbar {
 }
 
 .footer .social-icon {
-    margin-left: 15px; /* Adjust spacing between icons */
-    border-radius: 5px; /* Optional: rounded corners */
-    transition: background-color 0.5s ease; /* Smooth transition */
+    margin-left: 15px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
 }
 
 .footer .social-icon img {
-    width: 60px; /* Adjust icon size as needed */
+    width: 60px;
     height: auto;
-    padding: -15px; /* Add some padding around the icon */
+    padding: -15px;
     overflow: hidden;
 }
 
 .footer .social-icon.facebook:hover {
-    background-color: #3b5998; /* Facebook color on hover */
+    background-color: #3b5998;
 }
 
 .footer .social-icon.linkedin:hover {
-    background-color: #0077b5; /* LinkedIn color on hover */
+    background-color: #0077b5;
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
     .navbar-brand img {
-        height: 100px;
-        width: 100px;
+        height: 102px;
+        width: 106px;
+        margin-left: 0;
     }
+
     .nav-link {
         font-size: 2rem;
     }
+
     .nav-item {
         margin-right: 80px;
     }
-    .nav-item-contact {
-        margin-left: 150px;
-    }
+
     .banner {
         height: 500px;
     }
+
     .banner-text h1 {
         font-size: 4rem;
     }
+
     .banner-text h2 {
         font-size: 2rem;
     }
+
     .banner-text p {
         font-size: 1.5rem;
     }
-    .about-us-text-box, .what-we-offer-text-box {
+
+    .about-us-text-box,
+    .what-we-offer-text-box {
         padding: 60px;
     }
-    .about-us-text-box h2, .what-we-offer-text-box h2 {
+
+    .about-us-text-box h2,
+    .what-we-offer-text-box h2 {
         font-size: 2.5rem;
     }
-    .about-us-text-box p, .what-we-offer-text-box p {
+
+    .about-us-text-box p,
+    .what-we-offer-text-box p {
         font-size: 1.5rem;
     }
+
     .learn-more {
         padding: 10px 40px;
         font-size: 1.5rem;
     }
+
     .offer-box h3 {
         font-size: 1.5rem;
     }
+
     .offer-box p {
         font-size: 1rem;
     }
+
     .upcoming-events-text-box h2 {
         font-size: 2.5rem;
     }
+
     .events-container {
         max-height: 400px;
     }
+
     .event-box {
         padding: 10px;
     }
+
     .event-details h3 {
         font-size: 1.5rem;
     }
+
     .event-details h4 {
         font-size: 1.25rem;
     }
+
     .event-details p {
         font-size: 1rem;
     }
+
     .event-time .time {
         font-size: 1.25rem;
     }
 }
 
 @media (max-width: 768px) {
-    .navbar-brand img {
-        height: 60px;
-        width: 60px;
+    .navbar .container {
+        flex-direction: row;
     }
+
+    .navbar-brand {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .navbar-toggler {
+        order: 1;
+    }
+
+    .navbar-brand img {
+        height: 57;
+        width: 58;
+        margin-left: 0;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        text-align: center;
+    }
+
     .nav-link {
         font-size: 1.2rem;
     }
+
     .nav-item {
         margin-right: 0;
     }
-    .nav-item-contact {
-        margin-left: 0;
-    }
+
     .navbar-nav {
+        margin: 0;
         text-align: center;
-        width: 100%;
     }
+
     .navbar-toggler {
-        border: none;
-        outline: none;
+        margin-left: auto;
     }
+
     .banner {
         height: 400px;
     }
+
     .banner-text h1 {
         font-size: 3rem;
     }
+
     .banner-text h2 {
         font-size: 1.75rem;
     }
+
     .banner-text p {
         font-size: 1.25rem;
     }
-    .about-us-text-box, .what-we-offer-text-box {
+
+    .about-us-text-box,
+    .what-we-offer-text-box {
         padding: 40px;
     }
-    .about-us-text-box h2, .what-we-offer-text-box h2 {
+
+    .about-us-text-box h2,
+    .what-we-offer-text-box h2 {
         font-size: 2rem;
     }
-    .about-us-text-box p, .what-we-offer-text-box p {
+
+    .about-us-text-box p,
+    .what-we-offer-text-box p {
         font-size: 1.25rem;
     }
+
     .learn-more {
         padding: 8px 30px;
         font-size: 1.25rem;
     }
+
     .offer-box h3 {
         font-size: 1.25rem;
     }
+
     .offer-box p {
         font-size: 0.875rem;
     }
+
     .upcoming-events-text-box h2 {
         font-size: 2rem;
     }
+
     .events-container {
         max-height: 300px;
     }
+
     .event-box {
         padding: 8px;
     }
+
     .event-details h3 {
         font-size: 1.25rem;
     }
+
     .event-details h4 {
         font-size: 1rem;
     }
+
     .event-details p {
         font-size: 0.875rem;
     }
+
     .event-time .time {
         font-size: 1rem;
     }
@@ -739,87 +816,111 @@ body::-webkit-scrollbar {
 
 @media (max-width: 480px) {
     .navbar-brand img {
-        height: 60px;
-        width: 60px;
+        height: 29;
+        width: 31;
     }
+
     .nav-link {
         font-size: 1.2rem;
         display: block;
         padding: 10px 0;
     }
+
     .nav-item {
         margin-right: 0;
     }
-    .nav-item-contact {
-        margin-left: 0;
-    }
+
     .navbar-nav {
+        margin: 0;
         text-align: center;
-        width: 100%;
     }
+
     .navbar-toggler {
-        border: none;
-        outline: none;
+        margin-left: auto;
     }
+
     .banner {
         height: 300px;
     }
+
     .banner-text h1 {
         font-size: 2rem;
     }
+
     .banner-text h2 {
         font-size: 1.5rem;
     }
+
     .banner-text p {
         font-size: 1rem;
     }
-    .about-us-text-box, .what-we-offer-text-box {
+
+    .about-us-text-box,
+    .what-we-offer-text-box {
         padding: 20px;
     }
-    .about-us-text-box h2, .what-we-offer-text-box h2 {
+
+    .about-us-text-box h2,
+    .what-we-offer-text-box h2 {
         font-size: 1.75rem;
     }
-    .about-us-text-box p, .what-we-offer-text-box p {
+
+    .about-us-text-box p,
+    .what-we-offer-text-box p {
         font-size: 1rem;
     }
+
     .learn-more {
         padding: 6px 20px;
         font-size: 1rem;
     }
+
     .offer-box h3 {
         font-size: 1rem;
     }
+
     .offer-box p {
         font-size: 0.75rem;
     }
+
     .upcoming-events-text-box h2 {
         font-size: 1.75rem;
     }
+
     .events-container {
         max-height: 200px;
     }
+
     .event-box {
         padding: 6px;
     }
+
     .event-details h3 {
         font-size: 1rem;
     }
+
     .event-details h4 {
         font-size: 0.875rem;
     }
+
     .event-details p {
         font-size: 0.75rem;
     }
+
     .event-time .time {
         font-size: 0.875rem;
     }
-    .footer .text-left, .footer .social-links {
+
+    .footer .text-left,
+    .footer .social-links {
         text-align: center;
     }
+
     .footer .social-links {
         justify-content: center;
     }
+
     .footer .social-icon {
-        margin-left: 10px; /* Adjust spacing between icons */
+        margin-left: 10px;
     }
 }
