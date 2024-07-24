@@ -409,7 +409,7 @@ body::-webkit-scrollbar {
 }
 
 .event-details h3 {
-    position: relative;
+    position: auto;
     color: #D98C18;
 }
 
@@ -814,7 +814,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 414px), (max-width: 896px) {
     .navbar-brand img {
         height: 29;
         width: 31;
