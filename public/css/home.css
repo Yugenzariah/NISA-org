@@ -814,7 +814,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@media (min-width: 414px), (max-width: 896px) {
+@media (max-width: 896px) {
     .navbar-brand img {
         height: 29;
         width: 31;
