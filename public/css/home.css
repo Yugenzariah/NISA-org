@@ -4,8 +4,11 @@ body {
 }
 
 /* Hides the scrollbar and keep functionality */
-body::-webkit-scrollbar {
-    display: none;
+body::-webkit-scrollbar-track {
+    width: 10em;
+    height: 2em;
+    background-color: #aaa;
+    overflow: auto;
 }
 
 /* navigation bar styling */
@@ -40,6 +43,7 @@ body::-webkit-scrollbar {
 
 .navbar-toggler {
     margin-left: auto;
+    justify-content: flex-end;
 }
 
 .navbar-collapse {
@@ -613,8 +617,8 @@ body::-webkit-scrollbar {
 /* Media queries for responsiveness */
 @media (max-width: 1200px) {
     .navbar-brand img {
-        height: 102px;
-        width: 106px;
+        height: 55px;
+        width: 60px;
         margin-left: 0;
     }
 
