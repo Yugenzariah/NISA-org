@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hides the scrollbar and keep functionality */
+body::-webkit-scrollbar-track {
+    width: 10em;
+    height: 2em;
+    background-color: #aaa;
+    overflow: auto;
+}
+
+/* navigation bar styling */
+.navbar {
+    background-color: #D2DAE2;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar-brand-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+    justify-content: center;
+}
+
+.navbar-brand img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-item {
+    margin-right: 120px;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 2rem;
+    position: relative;
+    transition: color 0.5s ease;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    width: 0;
+    height: 1px;
+    background-color: #364D66;
+    transition: width 0.5s ease, left 0.5s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-link:hover {
+    color: #364D66;
+}
