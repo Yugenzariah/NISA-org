@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/NISA%20Logo.png" alt="NISA Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <section class="contact-form-container">
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="from_name" placeholder="Your Name" required>
+            
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email_id" placeholder="Your Email" required>
+            
+            <label for="description">Description</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+            
+            <button type="submit" id="send-btn">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="text-left">
+                © Copyright 2021, NISA. All rights reserved
+            </div>
+            <div class="social-links">
+                <span>Find us - </span>
+                <div class="social-icon facebook">
+                    <a href="https://www.facebook.com/nisa.organisation21"><img
+                            src="../../images/Icons/footerSocialMediaIcons/facebook/facebook-100.png"
+                            alt="Facebook" /></a>
+                </div>
+                <div class="social-icon linkedin">
+                    <a href="https://www.linkedin.com/groups/9049021/"><img
+                            src="../../images/Icons/footerSocialMediaIcons/linkedin/linked-in-100.png"
+                            alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="/js/contact.js"></script>
+</body>
+
+</html>

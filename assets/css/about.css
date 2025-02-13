@@ -1,0 +1,113 @@
+.banner {
+  height: 300px !important;
+}
+.banner .banner-text {
+  justify-content: center !important;
+}
+
+/* Mission and Values Section */
+.mission-values {
+  background-color: #F4F4F4;
+  padding: 40px;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-values h2 {
+  font-size: 2rem;
+  color: #364D66;
+  margin-bottom: 20px;
+}
+
+.mission-values p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Admin Team Section */
+.admin-team {
+  background-color: #3A506B;
+  color: #f3f3f3;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-team h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background-color: #274060;
+  padding: 30px;
+  border-radius: 10px;
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  color: #f3f3f3;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  justify-content: space-between;
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #FAB03B;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #ddd;
+  margin: 5px 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  color: #FAB03B;
+}
+
+.contact-button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: #FAB03B;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #FFA726;
+}
