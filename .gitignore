@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+<<<<<<< HEAD
+=======
+
+# Firebase admin sdk keys
+nisa-organization-firebase-adminsdk-63w8a-f64a39bf10.json
+>>>>>>> dev

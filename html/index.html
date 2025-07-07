@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NISA</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/NISA%20Logo.png" alt="NISA Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Nelson IT Student Association</h1>
+            <h2>Conferences for Innovative People</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+        </div>
+    </section>
+
+    <div class="content-container">
+        <div class="image-divider top-half">
+        </div>
+
+        <div class="about-us-container">
+            <h2>About Us</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+            <button class="learn-more">Learn More</button>
+        </div>
+
+        <div class="offer-container">
+            <h2>What we Offer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+            <div class="offer-box-container">
+                <div class="offer-box">
+                    <div class="icon-container">
+                        <img src="../../images/Icons/interactiveWorkshopIcons/hard-working-48.png" alt="Icon 1">
+                    </div>
+                    <h3>Interactive Workshops</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="offer-box">
+                    <div class="icon-container">
+                        <img src="../../images/Icons/tech-talk-icon.png" alt="Icon 2">
+                    </div>
+                    <h3>Expert Tech Talks</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+                <div class="offer-box">
+                    <div class="icon-container">
+                        <img src="../../images/Icons/customerSupportIcons/customer-support-50.png" alt="Icon 3">
+                    </div>
+                    <h3>Ongoing Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+        <div class="image-divider bottom-half">
+        </div>
+    </div>
+
+    <!-- Upcoming events will be dynamically loaded -->
+    <div class="content-container">
+        <div class="upcoming-events">
+            <h2 class="upcoming-events-header">Upcoming Events</h2>
+            <div class="events-container" id="events-container">
+            </div>
+        </div>
+    </div>    
+
+    <div class="split-container">
+        <div class="footer-image">
+            <img src="../../images/footer-image.png" alt="Footer Image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="text-left">
+                © Copyright 2021, NISA. All rights reserved
+            </div>
+            <div class="social-links">
+                <span>Find us - </span>
+                <div class="social-icon facebook">
+                    <a href="https://www.facebook.com/nisa.organisation21"><img
+                            src="../../images/Icons/footerSocialMediaIcons/facebook/facebook-100.png"
+                            alt="Facebook" /></a>
+                </div>
+                <div class="social-icon linkedin">
+                    <a href="https://www.linkedin.com/groups/9049021/"><img
+                            src="../../images/Icons/footerSocialMediaIcons/linkedin/linked-in-100.png"
+                            alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap and dependencies JS -->
+    <script type="module" src="../js/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        crossorigin="anonymous"></script>
+    <script type="module" src="../js/index.js"></script>
+</body>
+
+</html>

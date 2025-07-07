@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/events.css">
+    <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../../images/NISA%20Logo.png" alt="NISA Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-text">
+            <h1>Events</h1>
+        </div>
+    </section>
+
+    <!-- Event Modal Form -->
+    <div id="event-modal" class="modal-overlay">
+        <form id="event-form" class="modal-content">
+            <h3 id="modal-title">Add Event</h3>
+            <input type="hidden" id="event-id">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter event title" required>
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter event description" required></textarea>
+            <label for="date">Date and Time:</label>
+            <input type="datetime-local" id="date" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Event Location" required>
+            <label for="image">Image URL:</label>
+            <input type="text" id="image" placeholder="Enter image URL">
+            <button type="submit">Save</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+        </form>
+    </div>
+    
+    </div>    
+    
+
+    <section class="events">
+        <div class="events-content">
+            <div class="events-section">
+                <h2 class="section-header">Today</h2>
+                <div id="today-events" class="events-list"></div>
+            </div>
+            <div class="events-section">
+                <h2 class="section-header">Upcoming</h2>
+                <div id="upcoming-events" class="events-list"></div>
+            </div>
+            <div class="events-section">
+                <h2 class="section-header">Past</h2>
+                <div id="past-events" class="events-list"></div>
+            </div>
+        </div>
+        <div class="admin-buttons">
+            <button id="add-event-btn">Add</button>
+            <button id="edit-event-btn">Edit</button>
+            <button id="delete-event-btn">Delete</button>
+        </div>
+    </section>    
+
+    <section class="admin-access">
+        <button id="login-btn">Login</button>
+        <button id="logout-btn">Logout</button>
+    </section>    
+           
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="text-left">
+                © Copyright 2021, NISA. All rights reserved
+            </div>
+            <div class="social-links">
+                <span>Find us - </span>
+                <div class="social-icon facebook">
+                    <a href="https://www.facebook.com/nisa.organisation21"><img
+                            src="../../images/Icons/footerSocialMediaIcons/facebook/facebook-100.png"
+                            alt="Facebook" /></a>
+                </div>
+                <div class="social-icon linkedin">
+                    <a href="https://www.linkedin.com/groups/9049021/"><img
+                            src="../../images/Icons/footerSocialMediaIcons/linkedin/linked-in-100.png"
+                            alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/events.js"></script>
+    <script type="module" src="../js/firebase.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+.banner {
+    height: 300px !important;
+}
+
+.banner .banner-text {
+    justify-content: center !important;
+}
+
+.admin-access {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.events {
+    padding: 20px;
+    background-color: #1e2a38;
+    color: #fff;
+}
+
+.events-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.events-section {
+    position: relative;
+    background-color: #2a3c4e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-header {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #fab03b;
+    color: #000;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.event img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.event-details {
+    padding: 10px;
+}
+
+.event-details h3 {
+    font-size: 1.2rem;
+    margin: 0 0 5px;
+}
+
+.event-details p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.event-details .event-date {
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.admin-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.admin-buttons button {
+    background-color: #fab03b;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-buttons button:hover {
+    background-color: #d98c18;
+}
+
+
+#login-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #364D66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-btn:hover {
+    background-color: #FAB03B;
+}
+
+#logout-btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #364D66;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #FAB03B;
+}
+
+.event.selected {
+    border: 2px solid #fab03b;
+    background-color: #D3D3D3; 
+    transition: background-color 0.3s, border 0.3s;
+}
+
+/* Modal Overlay */
+#event-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+#event-form {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#event-form h3 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Form Input Fields */
+#event-form label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+#event-form input,
+#event-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#event-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+/* Form Buttons */
+#event-form button {
+    padding: 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#event-form button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#event-form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+#event-form button[type="button"] {
+    background-color: #dc3545;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+#event-form button[type="button"]:hover {
+    background-color: #c82333;
+}
