@@ -1,0 +1,57 @@
+.events-section {
+    background-color: #076788;
+    color: white;
+}
+
+.section-title {
+    font-family: 'Russo One', sans-serif;
+    color: #f89d28;
+    font-size: 2rem;
+}
+
+.event-card {
+    background-color: white;
+    color: #333;
+    border-radius: 15px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+    width: 120px;
+    height: 120px;
+    background-color: #f3f3f3;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+.event-title {
+    font-size: 1.25rem;
+    color: #076788;
+    margin-bottom: 0.25rem;
+}
+
+.event-date {
+    font-weight: bold;
+    color: #076788;
+    margin-bottom: 0.5rem;
+}
+
+.event-description {
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.btn-orange {
+    background-color: #f89d28;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+}
+
+.btn-orange:hover {
+    background-color: #e38816;
+    color: white;
+}

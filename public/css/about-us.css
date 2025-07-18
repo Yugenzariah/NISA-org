@@ -1,0 +1,22 @@
+.text-orange {
+  color: #f89d28;
+}
+
+.russo-title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2rem;
+}
+
+.member-img-placeholder {
+  width: 100px;
+  height: 100px;
+  background-color: #eaeaea;
+  border: 1px solid #555;
+}
+
+.member-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 1px solid #555;
+}
