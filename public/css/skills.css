@@ -1,0 +1,26 @@
+.text-orange {
+  color: #f89d28;
+}
+
+
+.section-title {
+    font-family: 'Russo One', sans-serif;
+    color: #f89d28;
+    font-size: 2rem;
+}
+#skills {
+  background-color: #f8f9fa;
+}
+
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.section-title {
+    font-family: 'Russo One', sans-serif;
+    color: #f89d28;
+    font-size: 2rem;
+}
