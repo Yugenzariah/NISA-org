@@ -1,0 +1,16 @@
+
+.custom-nav-btn {
+    background-color: #006B92;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-nav-btn:hover,
+.custom-nav-btn:focus {
+    background-color: #f7931e; 
+    color: white !important;
+}
